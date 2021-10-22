@@ -21,9 +21,7 @@ use Illuminate\Support\Facades\Session;
 |
 */
 
-Route::get('/time', function () {
-    return Carbon::now();
-});
+
 Route::get('/', function () {
     return view('welcome');
 });
