@@ -1,0 +1,8 @@
+            <form action="{{route('users.status', Auth::id())}}" method="post" id="change-status">
+                                @csrf
+                                @method('put')
+                                <button href="add_new_event.html" style="border: none;" class="add-event"
+                                    id="status-button">
+                                    {{ Auth::user()->status }}
+                                </button>
+                            </form>
